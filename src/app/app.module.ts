@@ -1,8 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpModule } from "@angular/http";
 
 
 import { AppComponent } from './app.component';
+
+//import angular material elements
+import { MatToolbarModule, MatCardModule, MatButtonModule, MatSnackBarModule } from "@angular/material";
+import { DataService } from '../services/data.service';
 
 
 @NgModule({
@@ -10,9 +16,17 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpModule,
+
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [DataService],
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

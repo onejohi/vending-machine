@@ -1,0 +1,22 @@
+[
+    {
+        "code": 1,
+        "name": "CocaCola 500ml",
+        "price": 50
+    },
+    {
+        "code": 2,
+        "name": "Fanta Orange 300ml",
+        "price": 35
+    },
+    {
+        "code": 3,
+        "name": "Lunch Bar",
+        "price": 150
+    },
+    {
+        "code": 4,
+        "name": "Lolipop",
+        "price": 5
+    }
+]
